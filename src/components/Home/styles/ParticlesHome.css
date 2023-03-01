@@ -1,0 +1,76 @@
+
+
+/*Animacion de particulas de hojas de fondo */
+
+.particlesHome_elements{
+    color: red;
+    opacity: .8;
+    position: fixed ;
+    top:  0;
+    animation: particlesHome 3s linear infinite;
+}
+.particlesHome_elements:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 2.5s;
+    animation-delay:3s;
+}
+.particlesHome_elements:nth-child(2){
+    width: 80px;
+    height: 80px;
+    left: 10%;   
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+.particlesHome_elements:nth-child(3){
+    width: 80px;
+    height: 80px;
+    left: 16%;   
+    animation-duration: 2s;
+    animation-delay: 3s
+}
+.particlesHome_elements:nth-child(4){
+    width: 80px;
+    height: 80px;
+    left: 77%;   
+    animation-duration: 2s;
+    animation-delay: 2s
+}
+.particlesHome_elements:nth-child(5){
+    width: 80px;
+    height: 80px;
+    left: 85%;
+    animation-duration: 2.5s;
+    animation-delay:3s;
+}
+.particlesHome_elements:nth-child(6){
+    width: 80px;
+    height: 80px;
+    left: 90%;   
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+.particlesHome_elements:nth-child(7){
+    width: 80px;
+    height: 80px;
+    left: 96%;   
+    animation-duration: 2s;
+    animation-delay: 3s
+}
+
+
+@keyframes particlesHome{
+    0% {
+        top:0;
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: .4;
+    }
+    100%{
+        top: 100vh;
+        opacity: 0;
+    }
+}

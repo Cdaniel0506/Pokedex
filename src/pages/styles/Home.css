@@ -1,0 +1,127 @@
+.home{
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    gap: 0;
+}
+.home_logOut{
+    border-radius:20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-family: var(---principal-font);
+    background-color: #d9dbdb;
+    border: 7px solid #b0b0b0;
+    padding: 40px;
+    width: fit-content;
+    margin: 0 auto;
+    top: 40px;
+}
+.home_logOut:hover{
+    width: 700px;
+}
+.home_title{
+    width: fit-content;
+    margin: 0 auto;
+    color: #fe0601;
+}
+.home_txt{
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    top: 0;
+}
+.home_handle{
+    width: fit-content;
+    margin: 0 auto;
+}
+.home_input{
+    padding: .15rem .9rem ;
+    border-radius: 9px;
+    
+}
+.home_btn{
+    background-color: aqua;
+    color: red;
+    border-radius: 9px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.home_btn:hover{
+    background-color:white;
+}
+.home_bar{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.home_red{
+    height: 105px;
+    background-color:#DD1A1A ;
+    position: relative;
+    top: 200px;
+    left:0px;
+    
+}
+.home_pokeball{
+    position: relative;
+    right: 50px auto;
+    top: 60px;
+    background-color: white;
+    border: 10px solid #000000;
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    left: 46%;
+    
+}
+.home_pokeball::after{
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color:rgba(33,33,33,1);
+    border: 10px solid #000000 ;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.home_pokeball{
+    animation: colortitle 4s linear infinite alternate both ;
+}
+.home_black{
+    height: 60px;
+    background-color:#1d1d1d ;
+    position: relative;
+    top: 200px ;
+    left:0px;
+    
+}
+
+/*tonos de colores del circulo de la pokeball*/
+@keyframes colortitle{
+    0%{
+        background: whitesmoke ;
+    }
+    33.3333%{
+        background: aliceblue ;
+    }
+    44.4444%{
+        background:aqua ;
+    }
+    66.666%{
+        background:#f9200d;
+    }
+    88.8888%{
+        background:red;
+    }
+    100%{
+        background: #a30b03;
+    }
+}
