@@ -5,7 +5,9 @@
     position: relative;
     cursor: pointer;
 }
-
+.pokemonCard:hover {
+  transform: scale(1.1);
+}
 .pokemonCard_header {
     height: 200px;
     background-color: aqua;
@@ -189,7 +191,6 @@
 
 /* background linear gradient */
 
- 
 
 .bg-lg-normal {
 

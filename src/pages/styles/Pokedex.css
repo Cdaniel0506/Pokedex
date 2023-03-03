@@ -36,6 +36,7 @@
     border-radius:5px;
     width: min(600px, 100%);
     transition: background 300ms ease;
+    
 }
 
 
@@ -63,8 +64,10 @@
 
 
 .pokedex_Filter-select{
+    color: red;
     padding:20px;
     width: max-content;
+    background-color:#a9a9a9;
     border: none;
     border-radius:5px;
     font-size: 18px;
@@ -75,9 +78,9 @@
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: repeat(auto-fill,300px);
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
-    padding: 30px;
+    padding: 50px;
 }
 
 .pokedex_paginations{

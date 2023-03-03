@@ -14,49 +14,49 @@
     height: 80px;
     left: 5%;
     animation-duration: 2.5s;
-    animation-delay:3s;
+    animation-delay:1ms;
 }
 .particlesHome_elements:nth-child(2){
     width: 80px;
     height: 80px;
     left: 10%;   
     animation-duration: 2s;
-    animation-delay: 2s;
+    animation-delay:2ms;
 }
 .particlesHome_elements:nth-child(3){
     width: 80px;
     height: 80px;
     left: 16%;   
     animation-duration: 2s;
-    animation-delay: 3s
+    animation-delay: 3ms;
 }
 .particlesHome_elements:nth-child(4){
     width: 80px;
     height: 80px;
     left: 77%;   
     animation-duration: 2s;
-    animation-delay: 2s
+    animation-delay: 4ms;
 }
 .particlesHome_elements:nth-child(5){
     width: 80px;
     height: 80px;
     left: 85%;
     animation-duration: 2.5s;
-    animation-delay:3s;
+    animation-delay:1ms;
 }
 .particlesHome_elements:nth-child(6){
     width: 80px;
     height: 80px;
     left: 90%;   
     animation-duration: 2s;
-    animation-delay: 2s;
+    animation-delay: 5ms;
 }
 .particlesHome_elements:nth-child(7){
     width: 80px;
     height: 80px;
     left: 96%;   
     animation-duration: 2s;
-    animation-delay: 3s
+    animation-delay: 2ms
 }
 
 

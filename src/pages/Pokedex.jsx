@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import PokemonCard from '../components/pokedex/PokemonCard'
-import usePokedex from '../hooks/usePokedex'
+import PokemonCard from '../components/pokedex/PokemonCard.jsx'
+import usePokedex from '../hooks/usePokedex.js'
 import "./styles/Pokedex.css"
 
 const Pokedex = () => {    

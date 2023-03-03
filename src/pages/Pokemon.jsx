@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import "./styles/Pokemon.css"
 
 
@@ -18,6 +18,10 @@ const Pokemon = () => {
         const percent = (stat * 100) / 255;
         return `${percent}%`
     }
+    const navigate=useNavigate()
+    const handleClickPokemon = () => {
+        navigate(`/pokedex/${pokemon.id}`)        
+    }
 
     useEffect(() => {
         const URL = `https://pokeapi.co/api/v2/pokemon/${id}/`
@@ -28,24 +32,25 @@ const Pokemon = () => {
 
     return (
         <main>
-            <article className="pokemon_container">
-                <section className="pokemon" >
+            <article className="pokemon_container" >
+                <section className={`pokemon border-${pokemon?.types[0].type.name}`}onClick={handleClickPokemon} >
                     {/*Parte superior */}
-                    <section className="pokemon_header"></section>
-                    <section className="pokemon_body" >
+                    <section className={`pokemon_header bg-lg-${pokemon?.types[0].type.name}`}>
                         <div className="pokemon_img">
                             <img src={pokemon?.sprites.other["official-artwork"].front_default} alt="" />
                         </div>
+
                     </section>
+                    <section className="pokemon_body" ></section>
 
                     {/*body - description*/}
                     <section className="pokemon_profile">
-                        <h2 className="pokemon_id">{pokemon?.id}</h2>
+                        <h2 className="pokemon_id"># {pokemon?.id}</h2>
                         <h2 className="pokemon_name">{pokemon?.name} </h2>
                         
 
                         <div className="pokemon_descrition">
-                            <div>
+                            <div className="pokemon_descrition-weight">
                                 <h5>Weight</h5>
                                 <h4>{pokemon?.weight}</h4>
                             </div>
