@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react"
-import { paginationLogic } from "../utils/Pagination"
+import { paginationLogic } from "../utils/pagination.js"
 import axios from "axios"
 
 
