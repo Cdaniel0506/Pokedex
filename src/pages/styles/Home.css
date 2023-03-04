@@ -52,6 +52,11 @@
 .home_btn:hover{
     background-color:white;
 }
+.home-img-anime{
+    position: absolute;
+    top: 69%;
+    left: 47%;
+}
 .home_bar{
     width: 100%;
     position: absolute;
@@ -107,7 +112,7 @@
 /*tonos de colores del circulo de la pokeball*/
 @keyframes colortitle{
     0%{
-        background: whitesmoke ;
+        background:#db3c6e ;
     }
     33.3333%{
         background: aliceblue ;
@@ -119,7 +124,7 @@
         background:#f9200d;
     }
     88.8888%{
-        background:red;
+        background:#1eff00;
     }
     100%{
         background: #a30b03;

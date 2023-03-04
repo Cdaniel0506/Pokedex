@@ -37,6 +37,9 @@ const Home = () => {
                         <button className="home_btn" >Start</button>
                     </form>
                 </section>
+                <div className="home-img-anime">
+                    <img src="/imagenes/pokemon-anime.gif" alt="" />
+                </div>
                 <section className='home_bar' >
                     <div className='home_red' ></div>
                     <div className='home_black'></div>

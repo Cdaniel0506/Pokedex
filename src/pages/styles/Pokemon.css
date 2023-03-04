@@ -37,16 +37,24 @@
     text-align: center;
     margin-top: -80px;
     font-size: 35px;
+    border: 2px solid ;
 }
 .pokemon_descrition{
     width: fit-content;
     margin: 0 auto;
 }
-.pokemon_descrition-weight{
-    list-style: none;
-    text-align: justify;
+.pokemon_descrition-weight{ 
+    position: relative;
+    margin: 10px;
+    left: -100px;  
 }
-
+.pokemon_descrition-height{ 
+    position: relative;
+    margin: 10px; 
+    left: 100px;
+    top: -40px;
+    
+}
 
 
 .pokemon_name {

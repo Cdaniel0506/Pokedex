@@ -27,7 +27,7 @@
     width: 80px;
     height: 80px;
     left: 16%;   
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-delay: 3ms;
 }
 .particlesHome_elements:nth-child(4){
@@ -41,14 +41,14 @@
     width: 80px;
     height: 80px;
     left: 85%;
-    animation-duration: 2.5s;
+    animation-duration: 1.5s;
     animation-delay:1ms;
 }
 .particlesHome_elements:nth-child(6){
     width: 80px;
     height: 80px;
     left: 90%;   
-    animation-duration: 2s;
+    animation-duration: 1.8s;
     animation-delay: 5ms;
 }
 .particlesHome_elements:nth-child(7){
