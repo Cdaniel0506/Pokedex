@@ -22,6 +22,7 @@ const Pokedex = () => {
 
     return (
         <main className='pokedex' >
+            
             <div className='pokedex_box-txt'>
                 <p className='pokedex_txt' ><span className='pokedex_txt-span' >Welcome {nameTrainer}</span>, here you can find information about your favorite pokemon. </p>
             </div>
@@ -48,6 +49,7 @@ const Pokedex = () => {
                     )
                 }
             </section>
+            
             <section className="pokedex_paginations">
                 <ul>
                     <i onClick={handlePreviusPage} className='bx bxs-chevrons-left bx-tada bx-flip-vertical' ></i>

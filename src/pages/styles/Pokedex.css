@@ -1,8 +1,20 @@
-
+/*Fondo de pokeball*/
+.pokedex {
+    background-image: url(/public/imagenes/Pokeball.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: contain;
+    height:300px
+}
 .pokedex_box-txt{
     left:90px;
     position: relative;
-    top: 20px;   
+    top: 20px;
+    width: 45%;
+    background-color:#a9a9a9 ; 
+    border: 1px solid ;
+    border-radius: 50px;
 }
 .pokedex_txt{
     font-size: 20px;
@@ -48,20 +60,22 @@
 .pokedex_input{
     flex: 1;
     outline: none;
-    background-color: transparent;
+    background-color: whitesmoke;
     border: 2px solid red;
     border-radius: 10px;
     font-size: 15px;
     transition: color 300ms ease;
 }
 .pokedex_btn{
-    background-color: #a9a9a9;
+    background-color: #01c4e7;
     color: red;
     border-radius: 9px;
     font-size: 15px;
     cursor: pointer;
 }
-
+.pokedex_btn:hover{
+    background-color:#6f3460;
+}
 
 .pokedex_Filter-select{
     color: red;
