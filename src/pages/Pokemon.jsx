@@ -36,12 +36,12 @@ const Pokemon = () => {
                 <section className={`pokemon border-${pokemon?.types[0].type.name}`}onClick={handleClickPokemon} >
                     {/*Parte superior */}
                     <section className={`pokemon_header bg-lg-${pokemon?.types[0].type.name}`}>
+
+                    </section>
                         <div className="pokemon_img">
                             <img src={pokemon?.sprites.other["official-artwork"].front_default} alt="" />
                         </div>
-
-                    </section>
-                    <section className="pokemon_body" ></section>
+                    <section className={"pokemon_body"} ></section>
 
                     {/*body - description*/}
                     <section className="pokemon_profile">
@@ -51,27 +51,27 @@ const Pokemon = () => {
 
                         <div className="pokemon_descrition">
                             <div className="pokemon_descrition-weight">
-                                <h5 className="pokemon_descrition-weight-1">Weight</h5>
-                                <h4>{pokemon?.weight}</h4>
+                                <h5 className="pokemon_descrition-weight-one">Weight</h5>
+                                <h4 className="pokemon_descrition-weight-two">{pokemon?.weight}</h4>
                             </div>
                             <div className="pokemon_descrition-height">
-                                <h5>Height</h5>
-                                <h4>{pokemon?.height}</h4>
+                                <h5 className="pokemon_descrition-height-one" >Height</h5>
+                                <h4 className="pokemon_descrition-height-two">{pokemon?.height}</h4>
                             </div>
                         </div>
 
-                        <div>
-                            <div>
-                                <h3>Type</h3>
-                                <div>
+                        <div className="pokemon_descrition_two">
+                            <div className="pokemon_descrition_two-types">
+                                <h3 className="pokemon_descrition_two-one">Type</h3>
+                                <div className="pokemon_descrition_two-two">
                                     {
                                         pokemon?.types.map(type => <div key={type.type.name}><span>{type.type.name}</span> </div>)
                                     }
                                 </div>
                             </div>
-                            <div>
-                                <h3>Abilities</h3>
-                                <div>
+                            <div className="pokemon_descrition_two-abilities">
+                                <h3 className="pokemon_descrition_two-abilities-one">Abilities</h3>
+                                <div className="pokemon_descrition_two-abilities-two">
                                     {
                                         pokemon?.abilities.map(ability => <div key={ability.ability.name} ><span>{ability.ability.name}</span></div>)
                                     }

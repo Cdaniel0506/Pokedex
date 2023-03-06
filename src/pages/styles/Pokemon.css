@@ -13,20 +13,24 @@
 }
 
 .pokemon_header {
-    height: 250px;
+    padding: 10px;
+    height: 100px;
     background-color: aqua;
 }
 
-.pokemon_img {
-    width: fit-content;
-    margin: 0 auto;
-    position: relative;
-    top: -120px;
+.pokemon_body {    
+    padding: 10px; 
+    width: 10px;
+    
 }
-
-.pokemon_body {
-    text-align: center;
-    padding: 80px;
+.pokemon_img { 
+    text-align: center;   
+    position: relative;
+    top: -180px;
+}
+/*Animacion para la imagen cuando se le hace hover*/
+.pokemon_img:hover{
+    transform: rotate(300deg);
 }
 
 .pokemon_profile {
@@ -39,30 +43,89 @@
     font-size: 35px;
     border: 2px solid ;
 }
-.pokemon_descrition{
-    width: fit-content;
-    margin: 0 auto;
-}
-.pokemon_descrition-weight{ 
-    position: relative;
-    margin: 10px;
-    left: -100px;  
-}
-.pokemon_descrition-height{ 
-    position: relative;
-    margin: 10px; 
-    left: 100px;
-    top: -40px;
-    
-}
-
-
 .pokemon_name {
     text-align: center;
+    color: #ff0534;
     margin-top: 10px;
     font-size: 35px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-family: var(---principal-font);
+}
+.pokemon_descrition{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,2fr);
+}
+.pokemon_descrition-weight{ 
+    text-align: center;  
+}
+.pokemon_descrition-weight-one{
+    text-transform:capitalize;
+    color: #323569;
+    font-weight: normal;
+}
+.pokemon_descrition-weight-two{
+    color: #000117;
+    font-weight: bold;
+}
+.pokemon_descrition-height{
+    text-align: center;
+}
+.pokemon_descrition-height-one{
+    text-transform: capitalize;
+    color: #323569;
+    font-weight: normal;
+}
+.pokemon_descrition-height-two{
+    color: #000117;
+    font-weight: bold;
+}
+.pokemon_descrition_two{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,2fr);
+}
+.pokemon_descrition_two-types{
+    text-align: center;
+}
+.pokemon_descrition_two-one{
+    text-transform: uppercase;
+    
+}
+.pokemon_descrition_two-two{
+    text-transform: capitalize;
+    color:#2b97fa;
+    background-color: #d0ccd1;
+    border-radius:50px;
+}
+.pokemon_descrition_two-abilities{
+    text-align: center;
+    
+}
+.pokemon_descrition_two-abilities-one{
+    text-transform:uppercase;
+}
+.pokemon_descrition_two-abilities-two{
+    text-transform:capitalized;
+    color: #f82d97;
+    background-color: #d0ccd1;
+    border-radius: 50px;
+}
+.pokemon_stats-title{
+    text-align: center;
+    text-transform:uppercase;
+    color: #65727c;
+}
+
+.pokemon_stat-name{
+    position: relative;
+    left: 5%;
+    bottom: -17px;
+    text-transform: capitalize;
+}
+.pokemon_stat-value{
+    position: relative;
+    left: 72%;
 }
 
 .pokemon_stat-barGray {
