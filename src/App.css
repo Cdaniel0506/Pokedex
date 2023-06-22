@@ -1,0 +1,24 @@
+.App {
+    min-height: 100vh;
+    transition: background 300ms ease, color 300ms ease;
+}
+
+#dark {
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+}
+
+#light {
+    background-color: var(--Very-Light-Gray);
+    color: var(--Very-Dark-Blue);
+}
+.app__container {
+    display: grid;
+    gap: 20px;
+    grid-auto-rows: auto;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}

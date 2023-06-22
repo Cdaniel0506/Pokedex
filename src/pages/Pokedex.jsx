@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import PokemonCard from '../components/pokedex/PokemonCard.jsx'
 import usePokedex from '../hooks/usePokedex.js'
@@ -7,6 +7,7 @@ import "./styles/Pokedex.css"
 const Pokedex = () => {    
 
     const nameTrainer = useSelector((store) => store.nameTrainer);
+    
 
     const {
         handleSubmit,
@@ -16,12 +17,14 @@ const Pokedex = () => {
         handlePreviusPage,
         handleNextPage,
         pagesInBlock,
+        changeTheme, 
+        theme
     } =usePokedex();
 
 
 
     return (
-        <main className='pokedex' >
+        <main className='pokedex' id={theme} >
             
             <div className='pokedex_box-txt'>
                 <p className='pokedex_txt' ><span className='pokedex_txt-span' >Welcome {nameTrainer}</span>, here you can find information about your favorite pokemon. </p>
@@ -43,6 +46,8 @@ const Pokedex = () => {
                 {
                     pokemonsInPage.map(pokemon =>
                         <PokemonCard
+                            changeTheme={changeTheme} 
+                            theme={theme}
                             key={pokemon.url}
                             pokemonUrl={pokemon.url}
                         />

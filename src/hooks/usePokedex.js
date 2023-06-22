@@ -15,6 +15,10 @@ const usePokedex = () => {
     /* Estado que almacena la pagina actual*/
     const [currentPage, setCurrentPage] = useState(1)
 
+    /*Modo dark y withe */
+    const [theme, setTheme] = useState("dark");
+    const changeTheme = () => setTheme(theme === "dark" ? "light" : "dark")
+
 
     const handleChangeSelect = (e) => {
         setSelectType(e.target.value)
@@ -103,7 +107,9 @@ const usePokedex = () => {
         pokemonsInPage,
         handlePreviusPage,
         handleNextPage,
-        pagesInBlock
+        pagesInBlock,
+        changeTheme,
+        theme
     }
 }
 

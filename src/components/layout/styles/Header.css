@@ -4,6 +4,7 @@
     background-color:#DD1A1A ;
     position: relative;
 }
+
 .header_img {
     width: min(400px, calc(100% - 20px));
     position: absolute;
@@ -20,7 +21,7 @@
     right: 40px;
     top: -20px;
     background-color: white;
-    border: 10px solid #000000;
+    border: 10px solid #0e212f;
     width: 85px;
     aspect-ratio: 1;
     border-radius: 50%;
@@ -61,4 +62,24 @@
 }
 .header_btn :hover{
     color: #DD1A1A;
+}
+.modeDark__btn{
+    color: aliceblue;
+    display: flex;
+    position: relative;
+    left: 40px;
+    gap: 5px;
+    top: 15px;
+    width: 120px;
+    align-items: center;
+    cursor: pointer;
+}
+.modeDark__btn:hover{
+    background-color:#6b0023;
+    border-radius: 50px;
+    border: 3px solid white;
+}
+.modeDark__textTheme{
+    margin: 0;
+    font-weight: normal;
 }

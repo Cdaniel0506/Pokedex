@@ -5,6 +5,9 @@
     position: relative;
     cursor: pointer;
 }
+/*mode dark*/
+
+
 .pokemonCard:hover {
   transform: scale(1.1);
 }
@@ -15,6 +18,7 @@
 
 .pokemonCard_body {
     padding: 10px;
+    background-color:var(--white) ;
     
 }
 
